@@ -11,13 +11,13 @@
 <body id="body">
     <nav id="navbar">
         <ul id="navUl">
-            <li class="navlist"><a class="widget" href="/index.html">Home</a></li>
+            <li class="navlist"><a class="widget" href="/Portfolio">Home</a></li>
             <!-- <li class="navlist"><a class="widget" href="">Skills</a></li> -->
-            <li class="navlist"><a class="widget" href="/about.html">About</a></li>
-            <li class="navlist"><a class="widget" href="#footerIndex">Contact</a></li>
+            <li class="navlist"><a class="widget" href="/Portfolio/about.html">About</a></li>
+            <li class="navlist"><a class="widget" href="/Portfolio#contactSection">Contact</a></li>
         </ul>
     </nav>
-    <section id="section">
+    <section id="section" data-section>
     <div id="content">
         <h4 class="html">&lt;html&gt;</h4>
         <h4 class="html">&nbsp;&nbsp;&nbsp;&nbsp;&lt;body&gt;</h4>
@@ -68,15 +68,17 @@
     <div class="sphere"></div>
     
  </section>
- <hr style="border-width: 0.2px; opacity: 0.9; width: 90vw; margin: auto; border-color:#00897B;">
- <section class="section2">
-    <h2 class="skillHead">Skills</h2>
+ <!-- <hr style="border-width: 0.2px; opacity: 0.9; width: 90vw; margin: auto; border-color:#00897B;"> -->
+ <section class="section2" data-section>
+    <h2 class="skillHead glowing-btn">
+        <span class='glowing-txt'>S<span class='faulty-letter'>K</span>ILLS</span>
+    </h2>
     <div class="skillLogo">
-        <div style="width: 40%;background: #1a6a45;border-radius: 15px;padding: 45px 0px;">
+        <div class="skillCard" style="width: 40%;background: #1a6a45;border-radius: 15px;padding: 45px 0px;">
             <div class="imgContain" id="img1">
                 <img class="imgLogo" src="img/NET_Core_Logo.svg.png" alt="error">
                 <div class="skillContainer">
-                    <div style="width:65%;background-color: #bbaa42;height: 25px;"></div>
+                    <div class="skillFill" style="width:0%;background-color: #bbaa42;height: 25px;"></div>
                 </div>
             </div>
             <div class="imgContain" >
@@ -85,7 +87,7 @@
                 </div>
                 
                 <div class="skillContainer">
-                    <div style="width:65%;background-color: #bbaa42;height: 25px;"></div>
+                    <div class="skillFill" style="background-color: #bbaa42;height: 25px;"></div>
                 </div>
             </div>
             <div class="imgContain" >
@@ -93,7 +95,7 @@
                 <img class="imgLogo" id="img3" src="img/cpp.png" alt="error">
                 </div>
                 <div class="skillContainer">
-                    <div style="width:75%;background-color: #bbaa42;height: 25px;"></div>
+                    <div class="skillFill" style="background-color: #bbaa42;height: 25px;"></div>
                 </div>
             </div>
             <div class="imgContain" >
@@ -101,7 +103,7 @@
                 <img class="imgLogo" id="img4" src="img/javascript-736400_1280.png" alt="error">
             </div>
                 <div class="skillContainer">
-                    <div style="width:80%;background-color: #bbaa42;height: 25px;"></div>
+                    <div class="skillFill" style="background-color: #bbaa42;height: 25px;"></div>
                 </div>
             </div>
             <div class="imgContain" >
@@ -109,17 +111,17 @@
                     <img class="imgLogo" id="img5" src="img/html.png" alt="error">
                 </div>  
                 <div class="skillContainer">
-                    <div style="width:80%;background-color: #bbaa42;height: 25px;"></div>
+                    <div class="skillFill" style="background-color: #bbaa42;height: 25px;"></div>
                 </div>
             </div>
         </div>
-       <div style="width: 40%;background: #1a6a45;border-radius: 15px;padding: 45px 0px;">
+       <div class="skillCard" style="width: 40%;background: #1a6a45;border-radius: 15px;padding: 45px 0px;">
         <div class="imgContain" >
             <div style="width: 3vw; display: flex;justify-content: center;">
             <img class="imgLogo" id="img6" src="img/css.png" alt="error">
         </div>
             <div class="skillContainer">
-                <div style="width:80%;background-color: #bbaa42;height: 25px;"></div>
+                <div class="skillFill" style="background-color: #bbaa42;height: 25px;"></div>
             </div>
         </div>
         <div class="imgContain" id="img7">
@@ -127,7 +129,7 @@
             <img class="imgLogo" src="img/mySQL.png" alt="error">
         </div>
             <div class="skillContainer">
-                <div style="width:65%;background-color: #bbaa42;height: 25px;"></div>
+                <div class="skillFill" style="background-color: #bbaa42;height: 25px;"></div>
             </div>
         </div>
         <div class="imgContain" style="height: 45px;" id="img8">
@@ -135,195 +137,231 @@
                 <img class="imgLogo" src="img/aws.png" alt="error">
             </div>
             <div class="skillContainer">
-                <div style="width:50%;background-color: #bbaa42;height: 25px;"></div>
+                <div class="skillFill" style="background-color: #bbaa42;height: 25px;"></div>
             </div>
         </div>
         <div class="imgContain" id="img9">
             <img class="imgLogo" src="img/git.png" alt="error">
             <div class="skillContainer">
-                <div style="width:70%;background-color: #bbaa42;height: 25px;;"></div>
+                <div class="skillFill" style="background-color: #bbaa42;height: 25px;;"></div>
             </div>
         </div>
         <div class="imgContain" style="height: 45px;" id="img10">
             <div id="imgGithubContain">
                 <img class="imgLogo" src="img/github-394322_1280.png" alt="error"></div>
                 <div class="skillContainer">
-                    <div style="width:70%;background-color: #bbaa42;height: 25px;"></div>
+                    <div class="skillFill" style="background-color: #bbaa42;height: 25px;"></div>
                 </div>
             </div>
        </div>  
     </div>
  </section>
- <hr style="border-width: 0.2px; opacity: 0.9; width: 90vw; margin: auto; border-color:#00897B;">
- <section class="section2">
-    <h2 class="skillHead" id="projects">Projects</h2>
+ <!-- <hr style="border-width: 0.2px; opacity: 0.9; width: 90vw; margin: auto; border-color:#00897B;"> -->
+ <section class="section2" data-section>
+    <!-- <h2 class="skillHead" id="projects">Projects</h2> -->
     
-    <div class="projectContainer">
-        <!-- <div class="imageContainer">
-            <div class="avatar">
-               <img src="img/AIAvatar.jpeg" alt="avatar" width="100%" height="auto">
-            </div>
-        </div> -->
-        <div class="projectDisplay" id="projectDisplay">
-            <div class="projectCard1 projectCardControl">
-                <div class="projectImage">
-                    <img src="img/RoamingRazor3.png" class="projectImageTag" alt="roamingRazors" style="border-radius:10px;" width="100%" height="auto">
-                </div>
-                <!-- <h4>Romaing Razors</h4> -->
-             </div>
-             <div class="projectCard projectCardControl">
-                <div class="projectImage">
-                    <img src="img/RoamingRazor3.png" class="projectImageTag" alt="roamingRazors" style="border-radius:10px;" width="100%" height="auto">
-                </div>
-                <!-- <h4>Romaing Razors</h4> -->
-        </div>
-            <div class="projectCard2 projectCardControl">
-                <div class="projectImage">
-                    <img src="img/RoamingRazor3.png" class="projectImageTag"  alt="roamingRazors" style="border-radius:10px;" width="100%" height="auto">
-                </div>
-                <!-- <h4>Romaing Razors</h4> -->
-            </div>
-            <div style="position:absolute;top: 0px;right: 15px;width: 20px; height: 20px;">
-                <button type="button" id="nextProject">Next</button>
-            </div>
-        </div>
-        
-    
-       <!-- <div class="projectFrame">
-        <div class="projPart1">
-           <h4><button  class="projTag" id="roamingRazors">RoamingRazors:</button><span class="projSpan">(Currently Working)</span></h4> 
-            
-            <span>Technologies: Html, Css, Js, .NET MVC, MySQL, AWS. </span>
-            <span>RoamingRazors is a web app that makes grooming easier by connecting customers with hair stylist for home services.
-            </span>
-            <button class="moreBtn" id="moreBtn1">More<i class="fa-solid fa-circle-chevron-down"></i></button>
-        </div>
-       
-        <div class="projPart2">
-            <h5 class="projDescription">Description</h5>
-            <p class="descPara">Customer: This website allows customer to select any hair stylist they want and select the services from 
-                hair stylist. Payments are within the webiste.
-            </p>
-            <p class="descPara">Hair Stylist: Hair stylist can register their business on this website and can work on flexible schedule.
-            </p>
-            <button class="LessBtn" id="lessBtn1">Less<i class="fa-solid fa-circle-chevron-up"></i></button>
-        </div>
-    </div> 
-        <div id="RoamingImgSection">
-            <img src="img/RoamingRazors.png" alt="error" id="RoamingRazorsImg">
-            <button id="close">Close</button>
-        </div>
-        <div class="projectFrame">
-   <div class="projPart1">
-           <h4><a href="https://manjinder5911.github.io/dragonGame/" target="_blank" class="projTag">Dragon Game:</a></h4> 
-            <span>Technologies: Html, Css, Js</span>
-            <span>Dragon Game is a web game that can be played online. It is simple game where you have to save your dragon from enemy attack.
-            </span>
-            <button class="moreBtn" id="moreBtn2">More<i class="fa-solid fa-circle-chevron-down"></i></button>
-        </div>
-        <div class="projPart2">
-            <h5 class="projDescription">Description</h5>
-            <p class="descPara">The Game allows Player to jump and move forwards and backwards to avoid getting hit by the enemy.
-            </p>
-            <p class="descPara">Game gets over if we hit the enemy and our current score is recorded and we also have our highest score stored.
-            </p>
-            <button class="LessBtn" id="lessBtn2">Less<i class="fa-solid fa-circle-chevron-up"></i></button>
-        </div>
-        </div>
-        <div class="projectFrame">
-            <div class="projPart1">
-                <h4><a href="https://manjinder5911.github.io/BiologySite/" target="_blank" class="projTag">Biology Lab:</a></h4> 
-                 <span>Technologies: Html, Css, Js</span>
-                 <span>This website was part of school project in introduction to web development in which I made a Biology Lab Page of our college.
-                 </span>
-                 <button class="moreBtn" id="moreBtn3">More<i class="fa-solid fa-circle-chevron-down"></i></button>
-             </div>
-             <div class="projPart2">
-                 <h5 class="projDescription">Description</h5>
-                 <p class="descPara">This is a simple static web page which gives us information to Columbia College's Bio Lab.
-                 </p>
-                 <p class="descPara">It also sends us to the main web Page of Columbia College for further information.
-                 </p>
-                 <button class="LessBtn" id="lessBtn3">Less<i class="fa-solid fa-circle-chevron-up"></i></button>
-             </div>
-        </div>
-        <div class="projectFrame">
-            <div class="projPart1">
-                <h4><a href="https://manjinder5911.github.io/AnimatedCar/" target="_blank" class="projTag">Animated Car:</a></h4> 
-                 <span>Technologies: Html, Css, Js</span>
-                 <span>Animated Car is just an animation displayed on Web page in which car runs on the track and the tyres and car is moved using pure css.
-                 </span>
-                 <button class="moreBtn" id="moreBtn4">More<i class="fa-solid fa-circle-chevron-down"></i></button>
-             </div>
-             <div class="projPart2">
-                 <h5 class="projDescription">Description</h5>
-                 <p class="descPara">This is made possible by rotating the tyres of car using transform rotate property with animation to infinte.
-                 </p>
-                 <p class="descPara">The car also looks like moving forward by making the track run backwards at very high speed.
-                 </p>
-                 <button class="LessBtn" id="lessBtn4">Less<i class="fa-solid fa-circle-chevron-up"></i></button>
-             </div>
-        </div>
-        <div class="projectFrame">
-            <div class="projPart1">
-                <h4><a href="https://manjinder5911.github.io/AnalogClock/" target="_blank" class="projTag">Analog Clock:</a></h4> 
-                 <span>Technologies: Html, Css, Js</span>
-                 <span>This project is based on making an analog clock
-                 </span>
-                 <button class="moreBtn" id="moreBtn4">More<i class="fa-solid fa-circle-chevron-down"></i></button>
-             </div>
-             <div class="projPart2">
-                 <h5 class="projDescription">Description</h5>
-                 <p class="descPara">I used degree rotation for moving hour,minute and seconds hand with respect to change in time.
+    <div class="projectContainer" id="projects">
+        <ul class="project-list">
 
-                 </p>
-                 <p class="descPara">Using transform property to rotate hours,minutes and seconds hand with change in time, the clock is able to display current time.
-                 </p>
-                 <button class="LessBtn" id="lessBtn4">Less<i class="fa-solid fa-circle-chevron-up"></i></button>
-             </div>
-        </div>
-        <div class="projectFrame">
-            <div class="projPart1">
-                <h4><a href="https://manjinder5911.github.io/HamburgerSite/" target="_blank" class="projTag">eEducate:</a></h4> 
-                 <span>Technologies: Html, Css, Js</span>
-                 <span>eEducate is a website in which we can get information regarding the online education and how it has evolved.
-                 </span>
-                 <button class="moreBtn" id="moreBtn5">More<i class="fa-solid fa-circle-chevron-down"></i></button>
-             </div>
-             <div class="projPart2">
-                 <h5 class="projDescription">Description</h5>
-                 <p class="descPara">eEducate is like a Blog website which covered the era especially covid which made online Education a big thing.
-                 </p>
-                 <button class="LessBtn" id="lessBtn5">Less<i class="fa-solid fa-circle-chevron-up"></i></button>
-             </div>
-        </div>
-        <div class="projectFrame">
-            <div class="projPart1">
-                <h4><a href="https://github.com/Manjinder5911/JarvisDesktop" target="_blank" class="projTag">Jarvis Desktop Assistant:</a></h4> 
-                 <span>Technologies: Python</span>
-                 <span>Jarvis is a desktop assistant which can perform basic functions from our voice command.
-                 </span>
-                 <button class="moreBtn" id="moreBtn6">More<i class="fa-solid fa-circle-chevron-down"></i></button>
-             </div>
-             <div class="projPart2">
-                 <h5 class="projDescription">Description</h5>
-                 <p class="descPara">jarvis was made using python and its libraries. It can listen to our commands and has speech ability to reply.
-                 </p>
-                 <p class="descPara">It can give us latest news, open applications like you-tube, can greet us and some other basic functionalities.
-                 </p>
-                 <button class="LessBtn" id="lessBtn6">Less<i class="fa-solid fa-circle-chevron-up"></i></button>
-             </div>
-        </div> -->
+            <li>
+              <div class="project-content section-content">
+  
+                <p class="section-subtitle">My Works</p>
+  
+                <h2 class="h3 section-title">See My Works Which Will Amaze You!</h2>
+  
+                <p class="section-text">
+                  We develop the best quality website that serves for the long-term. Well-documented, clean, easy and
+                  elegant interface
+                  helps any non-technical clients.
+                </p>
+  
+              </div>
+            </li>
+  
+            <li>
+              <a class="project-card">
+  
+                <figure class="card-banner">
+                  <img src="img/RoamingRazors/RoamingRazors.jpeg" class="w-100" alt="A macintosh on a yellow background.">
+                </figure>
+  
+                <div class="card-content">
+                  <h3 class="h4 card-title">Lorem Ipsum Dolor 01</h3>
+  
+                  <time class="publish-date" datetime="2022-04">April 2022</time>
+                </div>
+  
+              </a>
+            </li>
+  
+            <li>
+              <a href="https://manjinder5911.github.io/HamburgerSite/" class="project-card" target="_blank">
+  
+                <figure class="card-banner">
+                  <img src="img/Eeducate/Eeducate.jpeg" class="w-100" alt="On a Blue background, a Wacom and a mouse.">
+                </figure>
+  
+                <div class="card-content">
+                  <h3 class="h4 card-title">Lorem Ipsum Dolor 02</h3>
+  
+                  <time class="publish-date" datetime="2022-04">April 2022</time>
+                </div>
+  
+              </a>
+            </li>
+  
+            <li>
+              <a class="project-card">
+  
+                <figure class="card-banner">
+                  <img src="img/FoodDelivery/FoodDelivery1.png" class="w-100"
+                    alt="A Cassette tape on a mellow apricot background.">
+                </figure>
+  
+                <div class="card-content">
+                  <h3 class="h4 card-title">Lorem Ipsum Dolor 03</h3>
+  
+                  <time class="publish-date" datetime="2022-04">April 2022</time>
+                </div>
+  
+              </a>
+            </li>
+  
+            <li>
+              <a href="https://manjinder5911.github.io/StyleSync/" class="project-card" target="_blank">
+  
+                <figure class="card-banner">
+                  <img src="img/Ecommerce/EcommerceHome.png" class="w-100"
+                    alt="Blue digital watch on a dark liver background.">
+                </figure>
+  
+                <div class="card-content">
+                  <h3 class="h4 card-title">Lorem Ipsum Dolor 04</h3>
+  
+                  <time class="publish-date" datetime="2022-04">April 2022</time>
+                </div>
+  
+              </a>
+            </li>
+  
+            <li>
+              <a href="https://github.com/Manjinder5911/IntegerDivideAlgorithm" class="project-card" target="_blank">
+  
+                <figure class="card-banner">
+                  <img src="img/DivisionAlgorithm/DivisionAlgorithm.jpeg" class="w-100"
+                    alt="On a dark liver background, Airport luggage car carrying a luggage.">
+                </figure>
+  
+                <div class="card-content">
+                  <h3 class="h4 card-title">Lorem Ipsum Dolor 05</h3>
+  
+                  <time class="publish-date" datetime="2022-04">April 2022</time>
+                </div>
+  
+              </a>
+            </li>
+  
+            <li>
+              <a href="https://manjinder5911.github.io/FitFlex/" class="project-card" target="_blank">
+  
+                <figure class="card-banner">
+                  <img src="img/FitFlex/FitFlex.jpeg" class="w-100"
+                    alt="On a yellow background, a digital watch and a glass.">
+                </figure>
+  
+                <div class="card-content">
+                  <h3 class="h4 card-title">Lorem Ipsum Dolor 06</h3>
+  
+                  <time class="publish-date" datetime="2022-04">April 2022</time>
+                </div>
+  
+              </a>
+            </li>
+  
+            <li>
+              <a href="https://manjinder5911.github.io/CoinNest/" class="project-card" target="_blank">
+  
+                <figure class="card-banner">
+                  <img src="img/CoinNest/CoinNest.jpeg" class="w-100"
+                    alt="A fujifilm instant camera on a dark electric blue background.">
+                </figure>
+  
+                <div class="card-content">
+                  <h3 class="h4 card-title">Lorem Ipsum Dolor 07</h3>
+  
+                  <time class="publish-date" datetime="2022-04">April 2022</time>
+                </div>
+  
+              </a>
+            </li>
+  
+            <!-- <li>
+              <button class="load-more">Load more work</button>
+            </li> -->
+  
+          </ul>
     </div>
  </section>
- <hr style="border-width: 0.2px; opacity: 0.9; width: 90vw; margin: auto; border-color:#ffffffb2;">
-
- <footer class="footerContainer" id="footerIndex">
+ <div id="projectDisplay">
+    
+    <div id="projectDisplayContent">
+        <div id="projectImgSection">
+            <div id="crossDiv"><i style="padding:5px 7px" class="fa-solid fa-xmark nextPrevIcon"></i></div>
+            <video preload="none" autoplay controls muted loop id="RoamingVideo">
+                <source src="img/RoamingRazors/RoamingRazorRecording.mp4" type="video/mp4">
+              </video>
+            <div class="buttonSection">
+                <button class="displayBtn" id="prevDisplayBtn">
+                    <i class="fa-solid fa-arrow-left fa-bounce nextPrevIcon"></i>
+                </button>
+                <button class="displayBtn" id="nextDisplayBtn">
+                    <i class="fa-solid fa-arrow-right fa-bounce nextPrevIcon"></i>
+                </button>
+            </div>
+        </div>
+        <div class="projPart1" id="RoamingContent">
+          <h2>Roaming Razors</h2> 
+           <span>Technologies: Html, Css, JavaScript, BootStrap,
+            .NET MVC, C#, MySql, RESTful API
+           </span>
+           <span>Description:</span>
+           <span>"Roaming Razors" is a project that simulates an on-demand hairstyling service platform, like Uber, utilizing HTML, CSS, JavaScript, ASP.NET MVC, C#, and MySQL technologies.
+           </span>
+           <span>Managed backend functionalities with .NET MVC and C#, focusing on secure data management and efficient processing of simulated customer requests.</span>
+           <span>Simulated the onboarding process for freelance stylists, emphasizing the scalability and collaborative nature of the platform.
+           </span>
+        
+            <a href="https://github.com/Manjinder5911/RoamingRazor" class="projLink" target="_blank">Github Repository</a>
+       </div>
+        <div class="projPart1" id="FoodContent">
+          <h2>Great Food (December 2021)</h2> 
+           <span>Technologies: Html, Css, JavaScript, jQuery
+           </span>
+           <span>Description:</span>
+           <span>Interactive Menu: Explore a visually appealing menu with categorized listings of appetizers, main courses, desserts, and beverages.
+           </span>
+           <span>Effortless Ordering: Seamlessly place orders online with a user-friendly interface, allowing customization of dishes and easy addition to the cart.</span>
+           <span>Responsive Design: Enjoy a consistent browsing experience across various devices, ensuring accessibility and convenience for all users.
+           </span>
+           <span>Dynamic Elements: Engage with interactive features powered by JavaScript and jQuery, enhancing user experience with smooth transitions and dynamic content updates.
+           </span>
+        
+            <!-- <a href="https://github.com/Manjinder5911/RoamingRazor" class="projLink">Github Repository</a> -->
+       </div>
+    </div>
+</div>
+ <!-- <hr style="border-width: 0.2px; opacity: 0.9; width: 90vw; margin: auto; border-color:#ffffffb2;"> -->
+<section class="section2" data-section>
+ <div id="contactSection">
     <div class="footContent">
-        <h1 class="footHead">
-            Get In Touch
+        <h1 class="footHead h3">
+            Have a Project Idea.
         </h1>
-        <div class="imgLogo">
+        <h1 class="footHead h3">
+            Let's Work Together
+        </h1>
+        <div class="imgLogo" id="socialImages">
             <a class="logotag" href="www.linkedin.com/in/manjinder-singh-808876239">
                 <svg class="iconsocial" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
@@ -342,6 +380,15 @@
         </a>
     </div>
     </div>
+     <div class="imageContainer">
+            <div class="avatar">
+               <img src="img/AIAvatar.jpeg" alt="avatar" width="100%" height="auto">
+            </div>
+        </div>
+</div>
+</section>
+
+ <footer class="footerContainer" id="footerIndex" >
     <div class="bottom">
         <h3 class="footEnd">
             &copy; 2024 - Manjinder Singh
