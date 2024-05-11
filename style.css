@@ -1057,53 +1057,6 @@ body{
     box-shadow: 2px white;
 }
 
-@keyframes swipeLeftToRight0{
-    0%{
-        transform: skew(0,0);
-        top:350px;
-        left:-600px;
-        /* transform: skew(-7deg,26deg); */
-        /* position:absolute; */
-        
-    }
-    100%{
-        transform: skew(7deg,-26deg);
-        top: 125px;
-        left: 22px;
-        /* width:max(24%, 300px); */
-          /* position:unset; */
-             
-    }
-}
-
-@keyframes swipeLeftToRight1{
-    0%{
-        transform:skew(7deg,- 26deg);
-        /* position:absolute; */
-        width:max(24%, 300px);
-        top: 125px;
-
-    }
-    100%{
-        transform: skew(0,0);
-        width: max(19%, 350px);
-        top: 0px;
-        /* left: 450px; */
-        /* position:unset; */
-             
-    }
-}
-
-@keyframes swipeLeftToRight2{
-    0%{
-        transform: skew(0,0);
-    }
-    100%{
-        transform: skew(-7deg,26deg);
-        /* width:max(24%, 300px); */
-    }
-}
-
 .projectFrame{
     width: 40vw;
     border-bottom: 1.5px solid #00897B;
@@ -1168,19 +1121,6 @@ div.projPart1>span,.projSpan{
     background-color: #bbaa42;
 }
 
-
-.moreBtn,.LessBtn{
-    background-color: transparent;
-    border:none;
-  
-    color:#BDBDBD;
-
-}
-
-.moreBtn:hover,.LessBtn:hover{
-   color: #00897B;
-
-}
 #roamingRazors{
     background-color: transparent;
     border: none;
@@ -1441,13 +1381,7 @@ align-items: center;
     box-sizing: border-box;
     border-radius: 20px;
 }
-/* media screen for project images */
-/* @media screen and (max-width:1878px){ */
-/* @media screen and (max-width:15px){
-#projectDisplayContent{
-    width: 80vw;
-}
-} */
+
 
 @media screen and (max-width:1475px){
 #projectDisplayContent{
