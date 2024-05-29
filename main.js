@@ -150,10 +150,6 @@ projectCard.forEach((element,index) => {
     }
   })
 });
-// projectCard[0].addEventListener('click',()=>{
-//   projectDisplay.style.display = "flex";
-//   body.style.overflow = "hidden";
-// })
 
 nextDisplayBtn.addEventListener('click',()=>{
   //we have one video also that's why .length
@@ -230,12 +226,7 @@ prevDisplayBtn.addEventListener('click',()=>{
   }
 })
 
-// projectCard.forEach((element,index) => {
-//   element.addEventListener('click',(e)=>{
-//     projectDisplay.style.display = "flex";
-//     body.style.overflow = "hidden";
-//   })
-// });
+
 
 // projRoaming.addEventListener('click', (e)=>{
 //   RoamingSection.style.display = "flex";
